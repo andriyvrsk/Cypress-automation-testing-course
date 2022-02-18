@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-17T15:02:43.560Z",
+    "end": "2022-02-17T15:02:44.948Z",
+    "duration": 1388,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1b62d41d-4e4f-4b4d-8774-770623d18d22",
+      "title": "",
+      "fullFile": "cypress/integration/Webdriver-uni/radio-buttons.js",
+      "file": "cypress/integration/Webdriver-uni/radio-buttons.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2db61c81-a9f1-4280-9ab3-3bd5fb33e1c7",
+          "title": "Verify radiobuttons via WebdriverUni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check specific radiobuttons",
+              "fullTitle": "Verify radiobuttons via WebdriverUni Check specific radiobuttons",
+              "timedOut": null,
+              "duration": 1208,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit(\"http://www.webdriveruniversity.com\");\n// cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click({force:true});\ncy.get('#radio-buttons').find(\"[type = 'radio']\").first().check();\ncy.get('#radio-buttons').find(\"[type = 'radio']\").eq(1).check();",
+              "err": {},
+              "uuid": "8241bda5-2f09-4bc4-aeae-6b739f586b1e",
+              "parentUUID": "2db61c81-a9f1-4280-9ab3-3bd5fb33e1c7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate states of specific radiobuttons",
+              "fullTitle": "Verify radiobuttons via WebdriverUni Validate states of specific radiobuttons",
+              "timedOut": null,
+              "duration": 150,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit(\"http://www.webdriveruniversity.com\");\n// cy.get('#dropdown-checkboxes-radiobuttons').invoke('removeAttr', 'target').click({force:true});\ncy.get(\"[value = 'lettuce']\").should('not.be.checked');\ncy.get(\"[value = 'pumpkin']\").should('be.checked');\ncy.get(\"[value = 'lettuce']\").check();\ncy.get(\"[value = 'lettuce']\").should('be.checked');\ncy.get(\"[value = 'pumpkin']\").should('not.be.checked');\ncy.get(\"[value = 'cabbage']\").should('be.disabled');",
+              "err": {},
+              "uuid": "65635494-fb09-4d8b-bb88-275da0458076",
+              "parentUUID": "2db61c81-a9f1-4280-9ab3-3bd5fb33e1c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8241bda5-2f09-4bc4-aeae-6b739f586b1e",
+            "65635494-fb09-4d8b-bb88-275da0458076"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1358,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
