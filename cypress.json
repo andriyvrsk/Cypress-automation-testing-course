@@ -4,6 +4,7 @@
     "defaultCommandTimeout": 10000,
     "pageLoadTimeout": 30000,
     "ignoreTestFiles": "**/Other/*",
+    "projectId": "c189xr",
     "viewportWidth": 1000,
     "viewportHeight": 660,
     "retries": {
