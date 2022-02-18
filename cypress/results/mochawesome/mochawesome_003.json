@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:00:00.923Z",
-    "end": "2022-02-17T15:00:05.053Z",
-    "duration": 4130,
+    "start": "2022-02-18T12:31:23.323Z",
+    "end": "2022-02-18T12:31:27.360Z",
+    "duration": 4037,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "34777e20-1044-46d7-8cfc-5371019c3f67",
+      "uuid": "55ab455d-e148-4a9f-915b-540dce70dbe5",
       "title": "",
       "fullFile": "cypress/integration/Automation-test-store/alias-invoke.js",
       "file": "cypress/integration/Automation-test-store/alias-invoke.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7651fbd0-0bce-4bbf-a422-2c1528237876",
+          "uuid": "ca8ceba8-c54e-43df-96f4-e22d79e86ad1",
           "title": "Alias and invoke",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Calculate total of normal and sale products",
               "fullTitle": "Alias and invoke Calculate total of normal and sale products",
               "timedOut": null,
-              "duration": 2639,
+              "duration": 2693,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get('.thumbnail').as('productThumbnail'); // cy.get('@productThumbnail').find('.oneprice').each(($el, index, $list) => {\n//     cy.log($el.text());\n// })\ncy.get('@productThumbnail').find('.oneprice').invoke('text').as('itemPrice');\ncy.get('@productThumbnail').find('.pricenew').invoke('text').as('saleItemPrice');\nvar itemsTotal = 0;\ncy.get('@itemPrice').then($linkText => {\n  var itemsPriceTotal = 0;\n  var itemPrice = $linkText.split('$');\n  var i;\n  for (i = 0; i < itemPrice.length; i++) {\n    cy.log(itemPrice[i]);\n    itemsPriceTotal += Number(itemPrice[i]);\n  }\n  ;\n  itemsTotal += itemsPriceTotal;\n  cy.log('Non sale items price total: ' + itemsPriceTotal);\n});\ncy.get('@saleItemPrice').then($linkText => {\n  var saleItemsPrice = 0;\n  var saleItemPrice = $linkText.split('$');\n  var i;\n  for (i = 0; i < saleItemPrice.length; i++) {\n    cy.log(saleItemPrice[i]);\n    saleItemsPrice += Number(saleItemPrice[i]);\n  }\n  ;\n  itemsTotal += saleItemsPrice;\n  cy.log('Sale items price total: ' + saleItemsPrice);\n}).then(() => {\n  cy.log('The total price of all products: ' + itemsTotal);\n  expect(itemsTotal).to.equal(648.5);\n});",
               "err": {},
-              "uuid": "7a7dba49-80dd-400f-9ef4-1224d5013b63",
-              "parentUUID": "7651fbd0-0bce-4bbf-a422-2c1528237876",
+              "uuid": "0260097a-285c-4c68-881e-012f5f9a921c",
+              "parentUUID": "ca8ceba8-c54e-43df-96f4-e22d79e86ad1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7a7dba49-80dd-400f-9ef4-1224d5013b63"
+            "0260097a-285c-4c68-881e-012f5f9a921c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2639,
+          "duration": 2693,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

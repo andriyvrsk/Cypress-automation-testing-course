@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:01:18.488Z",
-    "end": "2022-02-17T15:01:21.789Z",
-    "duration": 3301,
+    "start": "2022-02-18T12:32:32.927Z",
+    "end": "2022-02-18T12:32:35.095Z",
+    "duration": 2168,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6129243b-f09b-4b15-b71e-f9e7d7168451",
+      "uuid": "57176bf9-52a5-4d21-90d6-8de2f6464506",
       "title": "",
       "fullFile": "cypress/integration/Webdriver-uni/autocomplete-dropdown-list.js",
       "file": "cypress/integration/Webdriver-uni/autocomplete-dropdown-list.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "992494ac-ef7c-42cf-b8f4-453676c9960e",
+          "uuid": "a45dcfe1-8611-4c7a-b326-def1ad3d62d7",
           "title": "Verify autocomplete dropdown lists via WebdriverUni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Select specific product via autocomplete dropdown lists",
               "fullTitle": "Verify autocomplete dropdown lists via WebdriverUni Select specific product via autocomplete dropdown lists",
               "timedOut": null,
-              "duration": 3202,
+              "duration": 2044,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#autocomplete-textfield').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.get('#myInput').type('A');\ncy.get('#myInputautocomplete-list >*').each(($el, index, $list) => {\n  const prod = $el.text();\n  const productToSelect = 'Avacado';\n  if (prod === productToSelect) {\n    $el.trigger('click');\n    cy.get('#submit-button').click();\n    cy.url().should('include', 'Avacado');\n  }\n  ;\n}).then(() => {\n  cy.get('#myInput').type('g');\n  cy.get('#myInputautocomplete-list >*').each(($el, index, $list) => {\n    const prod = $el.text();\n    const productToSelect = 'Grapes';\n    if (prod === productToSelect) {\n      $el.trigger('click');\n      cy.get('#submit-button').click();\n      cy.url().should('include', 'Grapes');\n    }\n    ;\n  });\n});",
               "err": {},
-              "uuid": "38a1b23a-1e1c-4903-ae92-40ce7a6917f2",
-              "parentUUID": "992494ac-ef7c-42cf-b8f4-453676c9960e",
+              "uuid": "b1fa78df-9c38-4736-a701-52631ece6f13",
+              "parentUUID": "a45dcfe1-8611-4c7a-b326-def1ad3d62d7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "38a1b23a-1e1c-4903-ae92-40ce7a6917f2"
+            "b1fa78df-9c38-4736-a701-52631ece6f13"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3202,
+          "duration": 2044,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

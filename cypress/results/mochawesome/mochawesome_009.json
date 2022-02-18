@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:01:26.126Z",
-    "end": "2022-02-17T15:01:31.653Z",
-    "duration": 5527,
+    "start": "2022-02-18T12:32:41.594Z",
+    "end": "2022-02-18T12:32:46.286Z",
+    "duration": 4692,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "83c5ac49-f01e-44dc-83b9-6ee0b84bf6dc",
+      "uuid": "d7dde69e-ea48-46ed-a3c2-1b4153d2c412",
       "title": "",
       "fullFile": "cypress/integration/Webdriver-uni/browser-navigation.js",
       "file": "cypress/integration/Webdriver-uni/browser-navigation.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b382966f-dd46-4e2a-8b3d-cafd25e3e9ca",
+          "uuid": "1fd36ef1-6ded-4832-86f6-06a24c046c39",
           "title": "Validate WebdriverUni homepage links",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Confirm links redirect ot the correct page",
               "fullTitle": "Validate WebdriverUni homepage links Confirm links redirect ot the correct page",
               "timedOut": null,
-              "duration": 5507,
+              "duration": 4630,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "//cy.visit(\"http://www.webdriveruniversity.com/Contact-Us/contactus.html\");\ncy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#contact-us').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.reload();\ncy.reload(true); //reloads without using cashe\ncy.go('forward');\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.get('#login-portal').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'Login-Portal');\ncy.go('back');\ncy.get('#to-do-list').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'To-Do-List');\ncy.go('back');",
               "err": {},
-              "uuid": "3f9f07fa-26a0-4c99-b482-b5df7479d279",
-              "parentUUID": "b382966f-dd46-4e2a-8b3d-cafd25e3e9ca",
+              "uuid": "97b387a4-d695-4615-a9af-f6092c96f39d",
+              "parentUUID": "1fd36ef1-6ded-4832-86f6-06a24c046c39",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3f9f07fa-26a0-4c99-b482-b5df7479d279"
+            "97b387a4-d695-4615-a9af-f6092c96f39d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5507,
+          "duration": 4630,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

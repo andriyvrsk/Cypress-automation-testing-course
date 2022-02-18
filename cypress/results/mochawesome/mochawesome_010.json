@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:01:37.102Z",
-    "end": "2022-02-17T15:01:38.495Z",
-    "duration": 1393,
+    "start": "2022-02-18T12:32:53.279Z",
+    "end": "2022-02-18T12:32:54.852Z",
+    "duration": 1573,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "818488ea-64dc-40c0-b234-7fe97054d393",
+      "uuid": "11204070-a3dd-4f54-bc51-4eb6e83fcb14",
       "title": "",
       "fullFile": "cypress/integration/Webdriver-uni/checkboxes.js",
       "file": "cypress/integration/Webdriver-uni/checkboxes.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8f3029e7-b03b-4747-925a-fd8227b9890d",
+          "uuid": "cd400ea2-9a63-4c9c-bad4-bacc13d80955",
           "title": "Verify checkboxes via WebdriverUni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Check and validate checkbox",
               "fullTitle": "Verify checkboxes via WebdriverUni Check and validate checkbox",
               "timedOut": null,
-              "duration": 686,
+              "duration": 816,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "//cy.get('#checkboxes > :nth-child(1) > input').check();\n//cy.get('#checkboxes > :nth-child(1) > input').check().should('be.checked');\ncy.get('#checkboxes > :nth-child(1) > input').as('option-1');\ncy.get('@option-1').check();\ncy.get('@option-1').check().should('be.checked');",
               "err": {},
-              "uuid": "0e788889-0e94-4663-896c-9cbccfc07cf9",
-              "parentUUID": "8f3029e7-b03b-4747-925a-fd8227b9890d",
+              "uuid": "3920adea-365b-412a-aa57-a1b4845ad637",
+              "parentUUID": "cd400ea2-9a63-4c9c-bad4-bacc13d80955",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Uncheck and validate checkbox",
               "fullTitle": "Verify checkboxes via WebdriverUni Uncheck and validate checkbox",
               "timedOut": null,
-              "duration": 250,
+              "duration": 278,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get(':nth-child(5) > input').as('option-3');\ncy.get('@option-3').uncheck().should('not.be.checked');",
               "err": {},
-              "uuid": "19f2ef0e-f3f4-4a52-8268-694450633bf7",
-              "parentUUID": "8f3029e7-b03b-4747-925a-fd8227b9890d",
+              "uuid": "3d8655e4-c853-48d0-901d-0b0582f68a79",
+              "parentUUID": "cd400ea2-9a63-4c9c-bad4-bacc13d80955",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Check multiple checkboxes",
               "fullTitle": "Verify checkboxes via WebdriverUni Check multiple checkboxes",
               "timedOut": null,
-              "duration": 419,
+              "duration": 439,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get(\"*[type = 'checkbox']\").as('options');\ncy.get('@options').check(['option-1', 'option-2', 'option-3', 'option-4']).should('be.checked');",
               "err": {},
-              "uuid": "f71ca6f9-709a-4219-b3c6-19bb48037704",
-              "parentUUID": "8f3029e7-b03b-4747-925a-fd8227b9890d",
+              "uuid": "ae0c1939-5bab-4707-804c-8c6ab77da974",
+              "parentUUID": "cd400ea2-9a63-4c9c-bad4-bacc13d80955",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0e788889-0e94-4663-896c-9cbccfc07cf9",
-            "19f2ef0e-f3f4-4a52-8268-694450633bf7",
-            "f71ca6f9-709a-4219-b3c6-19bb48037704"
+            "3920adea-365b-412a-aa57-a1b4845ad637",
+            "3d8655e4-c853-48d0-901d-0b0582f68a79",
+            "ae0c1939-5bab-4707-804c-8c6ab77da974"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1355,
+          "duration": 1533,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

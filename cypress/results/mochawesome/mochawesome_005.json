@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:00:29.954Z",
-    "end": "2022-02-17T15:00:36.243Z",
-    "duration": 6289,
+    "start": "2022-02-18T12:31:48.188Z",
+    "end": "2022-02-18T12:31:52.908Z",
+    "duration": 4720,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "baac150b-a33f-4d6e-aeab-5d0f3ecccd19",
+      "uuid": "c1a3fc79-4056-4527-92e4-b3228ba38d09",
       "title": "",
       "fullFile": "cypress/integration/Automation-test-store/inspect-item.js",
       "file": "cypress/integration/Automation-test-store/inspect-item.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6546f8cc-2441-40e2-806b-438eb91a5f5e",
+          "uuid": "b3108821-002e-466b-8a1c-0712f9ad9576",
           "title": "Inspect Automation Test Store items using chain of commands",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Click on the first item using item text",
               "fullTitle": "Inspect Automation Test Store items using chain of commands Click on the first item using item text",
               "timedOut": null,
-              "duration": 4463,
+              "duration": 3401,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get('.prdocutname').contains('Skinsheen Bronzer Stick').click().then(function (itemHeaderText) {\n  console.log('Selected item: ' + itemHeaderText.text());\n});",
               "err": {},
-              "uuid": "b65fae5b-7026-482d-86f2-6c76621636f7",
-              "parentUUID": "6546f8cc-2441-40e2-806b-438eb91a5f5e",
+              "uuid": "59774541-8a64-45ce-9726-9325a3af5552",
+              "parentUUID": "b3108821-002e-466b-8a1c-0712f9ad9576",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b65fae5b-7026-482d-86f2-6c76621636f7"
+            "59774541-8a64-45ce-9726-9325a3af5552"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4463,
+          "duration": 3401,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:01:42.966Z",
-    "end": "2022-02-17T15:01:55.258Z",
-    "duration": 12292,
+    "start": "2022-02-18T12:33:02.403Z",
+    "end": "2022-02-18T12:33:15.146Z",
+    "duration": 12743,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2cc5cf79-d0a5-4170-8603-86be8954e7b0",
+      "uuid": "d18bb5b9-8785-4a7b-b122-24922b4cb664",
       "title": "",
       "fullFile": "cypress/integration/Webdriver-uni/contact-us.js",
       "file": "cypress/integration/Webdriver-uni/contact-us.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e72157ec-81db-4cb3-99d2-2ca1c43cd89b",
+          "uuid": "ceff6a5a-ab7a-4a94-8b13-69f6b62e5e71",
           "title": "Test Contact Us form via WebdriverUni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit a successful submission via Contact Us form",
               "fullTitle": "Test Contact Us form via WebdriverUni Should be able to submit a successful submission via Contact Us form",
               "timedOut": null,
-              "duration": 7070,
+              "duration": 7514,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.document().should('have.property', 'charset').and('eq', 'UTF-8');\ncy.title().should('include', 'WebDriver | Contact Us');\ncy.url().should('include', 'contactus');\ncontact_Us_PO.contactForm_Submission(Cypress.env(\"first_name\"), data.last_name, data.email, 'It is friday', 'h1', 'Thank You for your Message!');",
               "err": {},
-              "uuid": "23a1e7ad-4a3d-4443-824d-854f154ab884",
-              "parentUUID": "e72157ec-81db-4cb3-99d2-2ca1c43cd89b",
+              "uuid": "a85519a1-c0e5-43fb-94f2-4168ca8877dd",
+              "parentUUID": "ceff6a5a-ab7a-4a94-8b13-69f6b62e5e71",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should not be able to submit a successful submission via Contact Us form as all fields are required",
               "fullTitle": "Test Contact Us form via WebdriverUni Should not be able to submit a successful submission via Contact Us form as all fields are required",
               "timedOut": null,
-              "duration": 5150,
+              "duration": 5175,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "contact_Us_PO.contactForm_Submission(data.first_name, data.last_name, ' ', 'It is friday', 'body', 'Error: Invalid email address');",
               "err": {},
-              "uuid": "166e5f04-d04c-4625-9d81-b8ce66f50a51",
-              "parentUUID": "e72157ec-81db-4cb3-99d2-2ca1c43cd89b",
+              "uuid": "8e8889e5-409c-42a3-b25f-35f33fc4c2fd",
+              "parentUUID": "ceff6a5a-ab7a-4a94-8b13-69f6b62e5e71",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "23a1e7ad-4a3d-4443-824d-854f154ab884",
-            "166e5f04-d04c-4625-9d81-b8ce66f50a51"
+            "a85519a1-c0e5-43fb-94f2-4168ca8877dd",
+            "8e8889e5-409c-42a3-b25f-35f33fc4c2fd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12220,
+          "duration": 12689,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

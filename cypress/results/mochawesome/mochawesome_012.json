@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-17T15:02:01.399Z",
-    "end": "2022-02-17T15:02:03.826Z",
-    "duration": 2427,
+    "start": "2022-02-18T12:33:23.321Z",
+    "end": "2022-02-18T12:33:25.534Z",
+    "duration": 2213,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "caa41373-457e-4d92-aba3-190a80fd4655",
+      "uuid": "098ce179-d01e-4ee6-a0b6-f5f61e37a302",
       "title": "",
       "fullFile": "cypress/integration/Webdriver-uni/data-tables.js",
       "file": "cypress/integration/Webdriver-uni/data-tables.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d4adfc50-d631-4fce-a2d6-83ff8becec50",
+          "uuid": "7f84e2f6-a508-4eca-9364-e1cbcbfd00b9",
           "title": "Handling data via webdriverUni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "calculate and assert the total age of all users",
               "fullTitle": "Handling data via webdriverUni calculate and assert the total age of all users",
               "timedOut": null,
-              "duration": 1943,
+              "duration": 1761,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "var userDetails = [];\nlet numb = 0;\ncy.get('#thumbnail-1 td').each(($el, index, $list) => {\n  userDetails[index] = $el.text();\n}).then(() => {\n  var i;\n  for (i = 0; i < userDetails.length; i++) {\n    if (Number(userDetails[i])) {\n      numb += Number(userDetails[i]);\n    }\n    ;\n  }\n  ;\n  cy.log(\"Total age: \" + numb);\n  expect(numb).to.eq(322);\n});",
               "err": {},
-              "uuid": "c5618fa5-dea2-4de9-83a9-8f86fe833b97",
-              "parentUUID": "d4adfc50-d631-4fce-a2d6-83ff8becec50",
+              "uuid": "cbc09c6e-ac31-479a-88d2-7c32dba035d1",
+              "parentUUID": "7f84e2f6-a508-4eca-9364-e1cbcbfd00b9",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "calculate and assert of the given user by the last name",
               "fullTitle": "Handling data via webdriverUni calculate and assert of the given user by the last name",
               "timedOut": null,
-              "duration": 445,
+              "duration": 420,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get('#thumbnail-1 tr td:nth-child(2)').each(($el, index, $list) => {\n  const text = $el.text();\n  if (text.includes(\"Woods\")) {\n    cy.get('#thumbnail-1 tr td:nth-child(2)').eq(index).next().then(function (age) {\n      const userAge = age.text();\n      expect(userAge).to.eq('80');\n    });\n  }\n  ;\n});",
               "err": {},
-              "uuid": "ef9488ca-0a98-4eaa-baa3-58774d643097",
-              "parentUUID": "d4adfc50-d631-4fce-a2d6-83ff8becec50",
+              "uuid": "1c544996-3f62-494a-814e-51c449c932f0",
+              "parentUUID": "7f84e2f6-a508-4eca-9364-e1cbcbfd00b9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c5618fa5-dea2-4de9-83a9-8f86fe833b97",
-            "ef9488ca-0a98-4eaa-baa3-58774d643097"
+            "cbc09c6e-ac31-479a-88d2-7c32dba035d1",
+            "1c544996-3f62-494a-814e-51c449c932f0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2388,
+          "duration": 2181,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
