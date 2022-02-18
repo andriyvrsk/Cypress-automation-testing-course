@@ -3,3 +3,4 @@ cypress/screenshots**
 cypress/results**
 cypress/videos**
 /mochawesome-report/*
+/package-lock.json/*
